@@ -18,7 +18,6 @@ function toCelsius (temp) {
   return Math.round((temp  -  32) * 5 / 9);
 }
 
-
 function toFahrenheit (temp) {
   return Math.round(temp * 9 / 5 + 32);
 }
@@ -41,7 +40,6 @@ function determineConverter (e) {
 
       if (optionChosen[i].checked && optionChosen[i].value === 'fahrenheit') {
         var celAnswer = toCelsius(tempInput.value);
-        console.log(celAnswer);
         newTemp.innerHTML = tempInput.value + "&deg" + " fahrenheit converts to " + celAnswer + "&deg" + " celsius.";
         clearInput();
       }  
@@ -53,7 +51,6 @@ function determineConverter (e) {
   // property is true (sample code provided)
   
 // Get a reference to the button element in the DOM
-
 var button = document.getElementById("converter");
 
 // Assign a function to be executed when the button is clicked
